@@ -24,7 +24,7 @@ class GitHubTest(unittest.TestCase):
         github = LoginPage(self.driver)
         github.click_signin_button()
         github.enter_username("shivam1808")
-        github.enter_password("Shivam18@")
+        github.enter_password("********")
         github.click_signin()
 
         # self.driver.find_element_by_id("login_field").send_keys("shivam1808")
