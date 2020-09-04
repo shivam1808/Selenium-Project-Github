@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Unittest Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Unittest Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2020-09-04 13:02:23</p>
+                <p class='attribute'><strong>Duration: </strong>35.28 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 3, Pass: 0, Error: 3</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.GitHubTest</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_01_login</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Sign in"}
+  (Session info: chrome=85.0.4183.83)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:/Users/shiva/Desktop/Selenium Project GitHub/GitHub.py", line 23, in test_01_login
+    github.click_signin_button()
+  File "c:\Users\shiva\Desktop\Selenium Project GitHub\loginPage.py", line 14, in click_signin_button
+    self.driver.find_element_by_link_text(self.signin_button).click()
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"Sign in"}
+  (Session info: chrome=85.0.4183.83)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_02_new_repo</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"New"}
+  (Session info: chrome=85.0.4183.83)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:/Users/shiva/Desktop/Selenium Project GitHub/GitHub.py", line 33, in test_02_new_repo
+    self.driver.find_element_by_link_text("New").click()
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 428, in find_element_by_link_text
+    return self.find_element(by=By.LINK_TEXT, value=link_text)
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"link text","selector":"New"}
+  (Session info: chrome=85.0.4183.83)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_03_logout</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//details[@class='details-overlay details-reset js-feature-preview-indicator-container']//summary[@class='Header-link']"}
+  (Session info: chrome=85.0.4183.83)
+</p><p style="color:maroon;">Traceback (most recent call last):
+  File "c:/Users/shiva/Desktop/Selenium Project GitHub/GitHub.py", line 41, in test_03_logout
+    self.driver.find_element_by_xpath("//details[@class='details-overlay details-reset js-feature-preview-indicator-container']//summary[@class='Header-link']").click()
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 394, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 978, in find_element
+    'value': value})['value']
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\shiva\anaconda3\envs\Testing\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//details[@class='details-overlay details-reset js-feature-preview-indicator-container']//summary[@class='Header-link']"}
+  (Session info: chrome=85.0.4183.83)
+
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 3, Pass: 0, Error: 3 -- Duration: 35.28 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
